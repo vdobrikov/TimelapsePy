@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>TimelapsePy</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/custom.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">TimelapsePy</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+        </ul>
+        <span class="navbar-text" id="current-time">
+            1997 Aug 02:14
+        </span>
+    </div>
+</nav>
+
+<div role="main" class="container">
+    <div  class="row">
+        <div id="img-cam-preview-div">
+            <img src="static/img/preview.jpg" id="img-cam-preview" class="img-thumbnail">
+        </div>
+    </div>
+    <div class="row">
+        <form class="need-validation" id="cam-config">
+            <div class="form-row">
+                <div class="col">
+                    <label for="cam-width">Width</label>
+                    <input type="number" class="form-control" id="cam-width" aria-describedby="cam-width-help">
+                    <small id="cam-width-help" class="form-text text-muted">
+                        Width in pixels. Max 3280
+                    </small>
+                </div>
+                <div class="col">
+                    <label for="cam-height">Height</label>
+                    <input type="number" class="form-control" id="cam-height" aria-describedby="cam-height-help">
+                    <small id="cam-height-help" class="form-text text-muted">
+                        Height in pixels. Max 2464
+                    </small>
+                </div>
+                <div class="col">
+                    <label for="cam-rotation">Rotation</label>
+                    <select class="form-control" id="cam-rotation" aria-describedby="cam-rotation-help">
+                        <option>0</option>
+                        <option>90</option>
+                        <option>180</option>
+                        <option>270</option>
+                    </select>
+                    <small id="cam-rotation-help" class="form-text text-muted">
+                        Rotate the images taken by the camera
+                    </small>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col">
+                    <label for="cam-iso">ISO</label>
+                    <input type="number" class="form-control" id="cam-iso" aria-describedby="cam-iso-help">
+                    <small id="cam-iso-help" class="form-text text-muted">
+                        0 (auto) to 1600
+                    </small>
+                </div>
+                <div class="col">
+                    <label for="cam-shutter_speed">Shutter Speed</label>
+                    <input type="number" class="form-control" id="cam-shutter_speed" aria-describedby="cam-shutter_speed-help">
+                    <small id="cam-shutter_speed-help" class="form-text text-muted">
+                        0 - auto, else value in microseconds
+                    </small>
+                </div>
+                <div class="col">
+                    <label for="cam-sharpness">Sharpness</label>
+                    <input type="number" class="form-control" id="cam-sharpness" aria-describedby="cam-sharpness-help">
+                    <small id="cam-sharpness-help" class="form-text text-muted">
+                        -100 to 100 (0 default)
+                    </small>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col">
+                    <label for="cam-contrast">Contrast</label>
+                    <input type="number" class="form-control" id="cam-contrast" aria-describedby="cam-contrast-help">
+                    <small id="cam-contrast-help" class="form-text text-muted">
+                        -100 to 100 (0 default)
+                    </small>
+                </div>
+                <div class="col">
+                    <label for="cam-brightness">Brightness</label>
+                    <input type="number" class="form-control" id="cam-brightness" aria-describedby="cam-brightness-help">
+                    <small id="cam-brightness-help" class="form-text text-muted">
+                        0 to 100 (50 default)
+                    </small>
+                </div>
+                <div class="col">
+                    <label for="cam-saturation">Saturation</label>
+                    <input type="number" class="form-control" id="cam-saturation" aria-describedby="cam-saturation-help">
+                    <small id="cam-saturation-help" class="form-text text-muted">
+                        -100 to 100 (0 default)
+                    </small>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col">
+                    <label for="cam-quality">Quality</label>
+                    <input type="number" class="form-control" id="cam-quality" aria-describedby="cam-quality-help">
+                    <small id="cam-quality-help" class="form-text text-muted">
+                        1 to 100 (85 default)
+                    </small>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</main><!-- /.container -->
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="/static/js/jquery-3.3.1.min.js"></script>
+<script src="/static/js/bootstrap.min.js"></script>
+<script src="/static/js/app.js"></script>
+</body>
+</html>
+

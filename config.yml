@@ -1,0 +1,25 @@
+city: kiev
+
+camera:
+  resolution:
+    main:
+      width: 1920
+      heigh: 1080
+    preview:
+      width: 800
+      heigh: 600
+
+  # 0 = auto, 60-800 for manual ISO
+  iso: 0
+
+  # 0 = auto, else value in microseconds (seconds * 1000000)
+  shutter_speed: 0
+
+  sharpness: 0
+  contrast: 0
+  brightness: 50
+  saturation: 0
+  quality: 
+
+  # Rotate the images taken by the camera. Possible value are 0, 90, 180 or 270
+  rotation: 0
