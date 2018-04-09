@@ -1,13 +1,17 @@
 city: kiev
 
+path:
+  timelapse: resources
+  preview: static/img/preview.jpg
+
+preview_resolution:
+  width: 800
+  height: 600
+
 camera:
   resolution:
-    main:
-      width: 1920
-      heigh: 1080
-    preview:
-      width: 800
-      heigh: 600
+    width: 1920
+    height: 1080
 
   # 0 = auto, 60-800 for manual ISO
   iso: 0

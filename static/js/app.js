@@ -3,7 +3,7 @@ $(document).ready(function(){
     function updateImage() {
         image.attr("src", image.attr("src").split("?")[0]+"?" + Math.random());
     }
-    setInterval(updateImage, 1000);
+    setInterval(updateImage, 5000);
 
     var divTime = $("#current-time");
     function updateTime() {

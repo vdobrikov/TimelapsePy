@@ -1,4 +1,8 @@
-__pycache__/
-venv/
+**/__pycache__/
+**/venv/
 *.iml
-.idea/
+.idea
+**/.AppleDouble/
+.DS_Store
+
+resources/**
