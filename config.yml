@@ -4,11 +4,10 @@ path:
   timelapse: resources
   preview: static/img/preview.jpg
 
-preview_resolution:
-  width: 800
-  height: 600
-
 camera:
+  preview_resolution:
+    width: 800
+    height: 600
   resolution:
     width: 1920
     height: 1080

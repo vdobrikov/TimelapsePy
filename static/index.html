@@ -42,8 +42,31 @@
 
 <div role="main" class="container">
     <div  class="row">
-        <div id="img-cam-preview-div">
-            <img src="api/camera/preview" id="img-cam-preview" class="img-thumbnail">
+        <div id="cam-preview-wrapper">
+            <img src="api/camera/preview" id="cam-preview-img" class="img-thumbnail">
+        </div>
+    </div>
+    <div  class="row">
+        <div id="cam-preview-controls">
+            <button type="button" class="btn" id="cam-preview-controls-refresh">Refresh</button>
+        </div>
+    </div>
+    <div  class="row">
+        <div id="timelapse-controls">
+            <form class="form-inline" action="/api/camera/sheduletimelapse">
+                <div class="input-group">
+                    <label for="delay">Delay</label>
+                    <input type="number" class="form-control mb-2 mr-sm-2" name="delay" value="0" placeholder="Delay (sec)" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="basic-addon2">@example.com</span>
+                    </div>
+                </div>
+                <label for="duration">Duration</label>
+                <input type="number" class="form-control mb-2 mr-sm-2" name="duration" value="54000" placeholder="Duration (sec)">
+                <label for="interval">Interval</label>
+                <input type="number" class="form-control mb-2 mr-sm-2" name="interval" value="3" placeholder="Interval (sec)">
+                <button type="submit" class="btn btn-primary mb-2">Schedule</button>
+            </form>         
         </div>
     </div>
     <div class="row">

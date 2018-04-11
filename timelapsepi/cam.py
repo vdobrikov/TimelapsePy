@@ -6,7 +6,7 @@ from collections import namedtuple
 from enum import Enum
 
 logger = logging.getLogger('root')
-FORMAT = "[%(filename)s:%(lineno)s - %(funcName)20s() ] %(message)s"
+FORMAT = "[%(levelname)s %(filename)s:%(lineno)s - %(funcName)20s() ] %(message)s"
 logging.basicConfig(level=logging.DEBUG, format=FORMAT)
 logger.setLevel(logging.DEBUG)
 

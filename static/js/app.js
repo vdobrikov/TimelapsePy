@@ -1,9 +1,13 @@
 $(document).ready(function(){
-    var image = $("#img-cam-preview");
+    var image = $("#cam-preview-img");
     function updateImage() {
         image.attr("src", image.attr("src").split("?")[0]+"?" + Math.random());
     }
-    setInterval(updateImage, 5000);
+    // setInterval(updateImage, 5000);
+
+    $('#cam-preview-controls-refresh').on('click', function (e) {
+        updateImage();
+    })
 
     var divTime = $("#current-time");
     function updateTime() {
